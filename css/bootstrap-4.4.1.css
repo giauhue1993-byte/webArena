@@ -4,7 +4,7 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-
+*{scroll-behavior: smooth}
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -2549,6 +2549,7 @@ textarea.form-control {
 }
 
 .btn.disabled, .btn:disabled {
+
   opacity: 0.65;
 }
 
@@ -2559,13 +2560,14 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #007bff;
+  background-color: #A8292B;
   border-color: #007bff;
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #0069d9;
+  background-color: #F8B507;
+  background-color: #F8B507;
   border-color: #0062cc;
 }
 
@@ -2596,14 +2598,14 @@ fieldset:disabled a.btn {
 
 .btn-secondary {
   color: #fff;
-  background-color: #7A7403;
-  border-color: #9C9898;
+  background-color: #6c757d;
+  border-color: #6c757d;
 }
 
 .btn-secondary:hover {
   color: #fff;
-  background-color: #7A7403;
-  border-color: #9C9898;
+  background-color: #5a6268;
+  border-color: #545b62;
 }
 
 .btn-secondary:focus, .btn-secondary.focus {
@@ -2622,7 +2624,7 @@ fieldset:disabled a.btn {
 .btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active,
 .show > .btn-secondary.dropdown-toggle {
   color: #fff;
-  background-color: #E3D20C;
+  background-color: #545b62;
   border-color: #4e555b;
 }
 
@@ -4687,6 +4689,9 @@ input[type="button"].btn-block {
 
 .navbar-dark .navbar-nav .nav-link {
   color: rgba(255, 255, 255, 0.5);
+	padding-right: 20px;
+	padding-left: 20px
+	
 }
 
 .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
@@ -4731,13 +4736,12 @@ input[type="button"].btn-block {
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
-  min-height: 0px;
-	padding: 15px;
+  min-width: 0;
   word-wrap: break-word;
-  background-color: #FBF9F9;
+  background-color: #fff;
   background-clip: border-box;
-  border: 15px solid # #FFFFFF rgba(0,0, 0, 0.125);
-  border-radius: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 2rem;
 }
 
 .card > hr {
@@ -4928,6 +4932,7 @@ input[type="button"].btn-block {
     column-count: 3;
     -webkit-column-gap: 1.25rem;
     -moz-column-gap: 1.25rem;
+
     column-gap: 1.25rem;
     orphans: 1;
     widows: 1;
@@ -6702,6 +6707,7 @@ a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
   background-color: #0062cc !important;
+
 }
 
 .bg-secondary {
